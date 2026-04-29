@@ -26,12 +26,11 @@ export default function Home() {
               Intervention rapide à Marseille
             </span>
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-              Votre électricien de confiance à Marseille
+              Électricien à Marseille, rue d’Adoume : dépannage, mise aux normes et installation
             </h1>
             <p className="mt-6 max-w-xl text-lg text-slate-300">
-              Dépannage, mise aux normes, rénovation électrique et urgences 7j/7.
-              Antoine Electric intervient depuis la rue d’Adoume pour les particuliers
-              et les professionnels.
+              Antoine Electric intervient à Marseille et dans les quartiers proches de la rue d’Adoume pour les particuliers, commerces et syndics.
+              Dépannage, rénovation électrique, mise en sécurité et urgences 7j/7 selon disponibilité.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
@@ -50,7 +49,7 @@ export default function Home() {
           </div>
 
           <div className="rounded-3xl bg-white p-6 text-slate-800 shadow-2xl ring-1 ring-slate-200">
-            <h2 className="text-2xl font-bold">Services principaux</h2>
+            <h2 className="text-2xl font-bold">Services d’électricien à Marseille</h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {[
                 ["Dépannage urgent", "Panne, court-circuit, disjoncteur"],
@@ -65,10 +64,26 @@ export default function Home() {
               ))}
             </div>
             <div className="mt-6 rounded-2xl bg-blue-50 p-4 text-sm text-slate-700">
-              <p className="font-semibold text-blue-900">Zone d’intervention</p>
-              <p className="mt-1">Marseille et alentours · Rue d’Adoume</p>
+              <p className="font-semibold text-blue-900">Zone d’intervention locale</p>
+              <p className="mt-1">Marseille centre, rue d’Adoume et alentours</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto grid max-w-6xl gap-6 px-4 py-8 sm:px-6 lg:grid-cols-4 lg:px-8">
+          {[
+            ["Artisan local", "Basé à Marseille, intervention de proximité."],
+            ["Réponse rapide", "Appel direct et créneau de réservation simple."],
+            ["Travail propre", "Conseils clairs, finitions soignées, sécurité."],
+            ["Confiance", "Page claire, contact visible, CTA mobile immédiat."],
+          ].map(([title, desc]) => (
+            <article key={title} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 className="font-semibold text-slate-900">{title}</h3>
+              <p className="mt-1 text-sm text-slate-600">{desc}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -79,11 +94,10 @@ export default function Home() {
               Réservation en 3 clics
             </span>
             <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-              Réservez votre intervention en ligne
+              Réservez votre intervention en ligne à Marseille
             </h2>
             <p className="mt-4 max-w-2xl text-slate-600">
-              Choisissez votre besoin, votre créneau et laissez vos coordonnées. Antoine
-              vous rappelle rapidement pour confirmer le rendez-vous.
+              Choisissez votre besoin, votre créneau et laissez vos coordonnées. Antoine vous rappelle rapidement pour confirmer le rendez-vous.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
@@ -105,7 +119,7 @@ export default function Home() {
 
             <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
-                Calendrier de réservation
+                Créneaux disponibles
               </p>
               <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 {[
@@ -170,12 +184,12 @@ export default function Home() {
               Contact rapide
             </h2>
             <p className="mt-4 text-slate-600">
-              Expliquez votre besoin, et nous vous rappelons rapidement pour organiser
-              l’intervention.
+              Électricien à Marseille, rue d’Adoume : expliquez votre besoin, et nous vous rappelons rapidement pour organiser l’intervention.
             </p>
             <div className="mt-6 space-y-3 text-slate-700">
               <p><span className="font-semibold">Téléphone :</span> <a className="text-blue-700 underline" href="tel:+33400000000">+33 4 00 00 00 00</a></p>
               <p><span className="font-semibold">Adresse :</span> Rue d’Adoume, Marseille</p>
+              <p><span className="font-semibold">Zone :</span> Marseille centre et quartiers proches</p>
               <p><span className="font-semibold">Horaires :</span> 7j/7, urgences selon disponibilité</p>
             </div>
           </div>
@@ -192,6 +206,16 @@ export default function Home() {
           </form>
         </div>
       </section>
+
+      <footer className="border-t border-slate-200 bg-slate-900 px-4 py-10 text-slate-300">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="font-semibold text-white">Antoine Electric Marseille</p>
+            <p className="text-sm">Électricien local · Rue d’Adoume · Marseille</p>
+          </div>
+          <p className="text-sm">Interventions, dépannage, mise aux normes et installation électrique.</p>
+        </div>
+      </footer>
 
       <a
         href="tel:+33400000000"
