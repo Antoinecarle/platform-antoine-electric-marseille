@@ -87,6 +87,51 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid gap-6 md:grid-cols-3">
+          {[
+            ["Dépannage électrique à Marseille", "Panne, disjoncteur qui saute, court-circuit, prise défectueuse, urgence électrique."],
+            ["Installation et rénovation", "Prises, éclairage, tableaux, circuits, extension et modernisation d’installation."],
+            ["Mise aux normes et sécurité", "Vérification, protection, conformité et sécurisation de votre logement ou local."],
+          ].map(([title, desc]) => (
+            <article key={title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 className="text-xl font-bold text-slate-900">{title}</h3>
+              <p className="mt-3 text-slate-600">{desc}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-slate-100">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <span className="inline-flex rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-900">
+              SEO local Marseille
+            </span>
+            <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+              Votre électricien local à Marseille, rue d’Adoume et quartiers proches
+            </h2>
+            <p className="mt-4 text-slate-600">
+              Cette page cible les recherches locales comme électricien Marseille, dépannage électrique Marseille, mise aux normes Marseille,
+              intervention rue d’Adoume et électricien Marseille centre. L’objectif est simple : rassurer, être trouvé localement et générer des appels.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            {[
+              ["Marseille 7e et centre", "Intervention de proximité pour limiter les délais et augmenter la réactivité."],
+              ["Rue d’Adoume", "Adresse locale claire pour renforcer la confiance et la pertinence géographique."],
+              ["Appel direct", "CTA visible partout pour convertir les visiteurs en demandes d’intervention."],
+            ].map(([title, desc]) => (
+              <article key={title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <h3 className="text-xl font-bold text-slate-900">{title}</h3>
+                <p className="mt-3 text-slate-600">{desc}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="reservation" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
@@ -162,21 +207,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-6 md:grid-cols-3">
-          {[
-            ["Rapidité", "Réponse rapide pour les urgences et les demandes de devis."],
-            ["Confiance", "Interventions soignées, conseils clairs et travail propre."],
-            ["Sécurité", "Priorité à la conformité et à la protection de votre installation."],
-          ].map(([title, desc]) => (
-            <article key={title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-bold text-slate-900">{title}</h3>
-              <p className="mt-3 text-slate-600">{desc}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section id="contact" className="border-t border-slate-200 bg-white">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8">
           <div>
@@ -219,8 +249,7 @@ export default function Home() {
 
       <a
         href="tel:+33400000000"
-        className="fixed bottom-5 right-5 z-50 rounded-full bg-red-600 px-5 py-4 font-bold text-white shadow-2xl transition hover:bg-red-700 md:hidden"
-        aria-label="Appeler Antoine Electric"
+        className="fixed bottom-5 right-5 z-50 rounded-full bg-red-600 px-5 py-4 font-bold text-white shadow-2xl transition hover:bg-red-700"
       >
         Appeler
       </a>
