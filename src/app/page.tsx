@@ -41,10 +41,10 @@ export default function Home() {
                 Demander une intervention
               </a>
               <a
-                href="#contact"
+                href="#reservation"
                 className="rounded-lg border border-white/20 px-6 py-4 text-center font-bold text-white transition hover:bg-white/10"
               >
-                Obtenir un devis gratuit
+                Réserver un créneau
               </a>
             </div>
           </div>
@@ -69,6 +69,82 @@ export default function Home() {
               <p className="mt-1">Marseille et alentours · Rue d’Adoume</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="reservation" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <span className="inline-flex rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-900">
+              Réservation en 3 clics
+            </span>
+            <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+              Réservez votre intervention en ligne
+            </h2>
+            <p className="mt-4 max-w-2xl text-slate-600">
+              Choisissez votre besoin, votre créneau et laissez vos coordonnées. Antoine
+              vous rappelle rapidement pour confirmer le rendez-vous.
+            </p>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+              {[
+                ["Dépannage", "Panne, disjoncteur, urgence"],
+                ["Installation", "Prises, luminaires, équipements"],
+                ["Devis", "Projet, rénovation, mise aux normes"],
+              ].map(([title, desc]) => (
+                <button
+                  key={title}
+                  type="button"
+                  className="rounded-2xl border-2 border-slate-200 bg-white p-4 text-left shadow-sm transition hover:border-blue-700 hover:shadow-md"
+                >
+                  <p className="font-semibold text-slate-900">{title}</p>
+                  <p className="mt-1 text-sm text-slate-600">{desc}</p>
+                </button>
+              ))}
+            </div>
+
+            <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+                Calendrier de réservation
+              </p>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                {[
+                  ["Aujourd’hui", "Disponible"],
+                  ["Demain", "8h - 12h"],
+                  ["Jeudi", "14h - 18h"],
+                  ["Vendredi", "Urgences"],
+                ].map(([day, slot]) => (
+                  <button
+                    key={day}
+                    type="button"
+                    className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-left transition hover:border-red-500 hover:bg-red-50"
+                  >
+                    <p className="font-semibold text-slate-900">{day}</p>
+                    <p className="mt-1 text-sm text-slate-600">{slot}</p>
+                  </button>
+                ))}
+              </div>
+              <p className="mt-4 text-sm text-slate-500">
+                Créneaux indicatifs — confirmation par téléphone après réservation.
+              </p>
+            </div>
+          </div>
+
+          <form className="rounded-3xl border border-slate-200 bg-white p-6 shadow-lg">
+            <h3 className="text-2xl font-bold text-slate-900">Demande de réservation</h3>
+            <p className="mt-2 text-slate-600">
+              Laissez vos infos et on vous rappelle pour bloquer le créneau.
+            </p>
+            <div className="mt-6 grid gap-4">
+              <input className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none ring-blue-600 focus:ring-2" placeholder="Votre nom" />
+              <input className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none ring-blue-600 focus:ring-2" placeholder="Votre téléphone" />
+              <input type="date" className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none ring-blue-600 focus:ring-2" />
+              <textarea className="min-h-32 rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none ring-blue-600 focus:ring-2" placeholder="Décrivez votre besoin" />
+              <button type="submit" className="rounded-xl bg-red-600 px-6 py-4 font-bold text-white shadow-lg transition hover:bg-red-700">
+                Confirmer la réservation
+              </button>
+            </div>
+          </form>
         </div>
       </section>
 
