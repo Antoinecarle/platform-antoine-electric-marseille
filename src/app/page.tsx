@@ -218,18 +218,25 @@ export default function Home() {
             </p>
             <div className="mt-6 space-y-3 text-slate-700">
               <p><span className="font-semibold">Téléphone :</span> <a className="text-blue-700 underline" href="tel:+33400000000">+33 4 00 00 00 00</a></p>
-              <p><span className="font-semibold">Adresse :</span> Rue d’Adoume, Marseille</p>
-              <p><span className="font-semibold">Horaires :</span> Lundi au samedi, selon disponibilité</p>
+              <p><span className="font-semibold">Adresse :</span> Marseille, rue d’Adoume</p>
+              <p><span className="font-semibold">Zone :</span> Marseille centre, quartiers proches, interventions locales</p>
             </div>
           </div>
-          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-            <h3 className="text-xl font-bold text-slate-900">Pourquoi cette palette fonctionne</h3>
-            <ul className="mt-4 space-y-3 text-slate-600">
-              <li>• Bleu marine pour la confiance et la structure</li>
-              <li>• Jaune pour les actions et les boutons importants</li>
-              <li>• Vert pour la rassurance et les éléments de validation</li>
-              <li>• Fond clair pour garder une lecture propre et moderne</li>
+
+          <div className="rounded-3xl bg-slate-900 p-8 text-white">
+            <h3 className="text-2xl font-bold">Pourquoi ce site convertit mieux</h3>
+            <ul className="mt-5 space-y-3 text-slate-200">
+              <li>• Couleurs cohérentes : bleu confiance, jaune action, vert sécurité</li>
+              <li>• SEO local clair pour Marseille et rue d’Adoume</li>
+              <li>• Sections complètes pour rassurer et convertir</li>
+              <li>• Réservation et appel visibles partout</li>
             </ul>
+            <div className="mt-8 rounded-2xl bg-emerald-500/15 p-4 text-sm text-emerald-100">
+              <p className="font-semibold text-emerald-300">Conseil couleur</p>
+              <p className="mt-1">
+                Bleu pour la structure, jaune pour les CTA, vert pour les badges de confiance. C’est le meilleur équilibre pour un artisan local.
+              </p>
+            </div>
           </div>
         </div>
       </section>
