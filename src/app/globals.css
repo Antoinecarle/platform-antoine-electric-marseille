@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+:root {
+  --background: #FDFCFB;
+  --foreground: #2C2C2C;
+  --primary: #1E3A8A;
+  --secondary: #10b981;
+  --accent: #fbbf24;
+  --success: #16a34a;
+  --border: #E5E1DA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, sans-serif;
+}
