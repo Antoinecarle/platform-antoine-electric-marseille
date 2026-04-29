@@ -53,7 +53,11 @@ export default function Home() {
           <div className="relative">
             <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-tr from-[#fbbf24]/20 to-transparent blur-2xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-xl transition-transform hover:scale-[1.02]">
-              <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Électricien professionnel en intervention" className="h-72 w-full object-cover opacity-90" />
+              <img
+                src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Électricien professionnel en intervention"
+                className="h-72 w-full object-cover opacity-90"
+              />
               <div className="p-8">
                 <h2 className="font-serif text-xl font-light sm:text-2xl">Services Premium</h2>
                 <div className="mt-8 grid gap-4">
@@ -163,7 +167,7 @@ export default function Home() {
                   <p className="text-[10px] font-bold uppercase tracking-widest text-[#1E3A8A]">Disponibilités</p>
                 </div>
                 <div className="mt-6 grid grid-cols-2 gap-4 lg:grid-cols-4">
-                  {[ ["Aujourd’hui", "Libre"], ["Demain", "Matin"], ["Jeudi", "14h-18h"], ["Vendredi", "Urgence"] ].map(([day, slot]) => (
+                  {[["Aujourd’hui", "Libre"], ["Demain", "Matin"], ["Jeudi", "14h-18h"], ["Vendredi", "Urgence"]].map(([day, slot]) => (
                     <div key={day} className="text-center">
                       <p className="text-xs font-medium text-[#121926]">{day}</p>
                       <p className="mt-1 text-[10px] font-bold uppercase text-[#fbbf24]">{slot}</p>
@@ -179,28 +183,16 @@ export default function Home() {
               <h3 className="font-serif text-2xl text-white sm:text-3xl">Réservation</h3>
               <div className="mt-8 grid gap-4">
                 <input type="text" placeholder="Votre nom" className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-[#8C8C8C] outline-none focus:border-[#fbbf24]" />
-                <input type="tel" placeholder="Téléphone" className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-[#8C8C8C] outline-none focus:border-[#fbbf24]" />
-                <input type="date" className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none focus:border-[#fbbf24]" />
-                <textarea rows={4} placeholder="Décrivez votre besoin" className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-[#8C8C8C] outline-none focus:border-[#fbbf24]" />
+                <input type="tel" placeholder="Votre téléphone" className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-[#8C8C8C] outline-none focus:border-[#fbbf24]" />
+                <textarea rows={5} placeholder="Décrivez votre besoin" className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-[#8C8C8C] outline-none focus:border-[#fbbf24]" />
+                <button type="submit" className="mt-2 rounded-xl bg-[#fbbf24] px-5 py-3 text-xs font-bold uppercase tracking-widest text-[#121926] transition-all hover:bg-[#fcd34d]">
+                  Envoyer la demande
+                </button>
               </div>
-              <button type="submit" className="mt-6 w-full rounded-xl bg-[#fbbf24] px-6 py-4 text-xs font-bold uppercase tracking-[0.25em] text-[#121926] transition-all hover:bg-[#fcd34d]">
-                Confirmer la demande
-              </button>
             </div>
-            <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#1E3A8A]/20 blur-3xl" />
           </form>
         </div>
       </section>
-
-      <footer className="border-t border-[#E5E1DA] bg-white py-10">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 sm:px-12 lg:flex-row lg:items-center lg:justify-between lg:px-24">
-          <div>
-            <p className="font-serif text-lg text-[#121926]">Antoine Electric Marseille</p>
-            <p className="mt-1 text-xs uppercase tracking-[0.2em] text-[#8C8C8C]">Électricien local · Marseille centre · Rue d’Adoume</p>
-          </div>
-          <p className="text-[11px] text-[#8C8C8C]">Dépannage · Installation · Mise aux normes · Réservation en ligne</p>
-        </div>
-      </footer>
     </main>
   );
 }
