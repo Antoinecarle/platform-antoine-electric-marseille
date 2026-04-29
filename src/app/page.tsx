@@ -11,7 +11,7 @@ export default function Home() {
           </div>
           <a
             href="tel:+33400000000"
-            className="rounded-full bg-red-600 px-4 py-3 text-sm font-bold text-white shadow-lg transition hover:bg-red-700"
+            className="rounded-full bg-yellow-400 px-4 py-3 text-sm font-bold text-slate-900 shadow-lg transition hover:bg-yellow-300"
             aria-label="Appeler Antoine Electric maintenant"
           >
             Appeler maintenant
@@ -35,7 +35,7 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
                 href="tel:+33400000000"
-                className="rounded-lg bg-red-600 px-6 py-4 text-center font-bold text-white shadow-lg transition hover:bg-red-700"
+                className="rounded-lg bg-yellow-400 px-6 py-4 text-center font-bold text-slate-900 shadow-lg transition hover:bg-yellow-300"
               >
                 Demander une intervention
               </a>
@@ -63,8 +63,8 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="mt-6 rounded-2xl bg-blue-50 p-4 text-sm text-slate-700">
-              <p className="font-semibold text-blue-900">Zone d’intervention locale</p>
+            <div className="mt-6 rounded-2xl bg-green-50 p-4 text-sm text-slate-700">
+              <p className="font-semibold text-green-700">Zone d’intervention locale</p>
               <p className="mt-1">Marseille centre, rue d’Adoume et alentours</p>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Home() {
       <section className="border-t border-slate-200 bg-slate-100">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-flex rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-900">
+            <span className="inline-flex rounded-full bg-yellow-100 px-4 py-2 text-sm font-semibold text-yellow-900">
               SEO local Marseille
             </span>
             <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
@@ -135,7 +135,7 @@ export default function Home() {
       <section id="reservation" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <span className="inline-flex rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-900">
+            <span className="inline-flex rounded-full bg-yellow-100 px-4 py-2 text-sm font-semibold text-yellow-900">
               Réservation en 3 clics
             </span>
             <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
@@ -176,7 +176,7 @@ export default function Home() {
                   <button
                     key={day}
                     type="button"
-                    className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-left transition hover:border-red-500 hover:bg-red-50"
+                    className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-left transition hover:border-yellow-500 hover:bg-yellow-50"
                   >
                     <p className="font-semibold text-slate-900">{day}</p>
                     <p className="mt-1 text-sm text-slate-600">{slot}</p>
@@ -199,7 +199,7 @@ export default function Home() {
               <input className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none ring-blue-600 focus:ring-2" placeholder="Votre téléphone" />
               <input type="date" className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none ring-blue-600 focus:ring-2" />
               <textarea className="min-h-32 rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none ring-blue-600 focus:ring-2" placeholder="Décrivez votre besoin" />
-              <button type="submit" className="rounded-xl bg-red-600 px-6 py-4 font-bold text-white shadow-lg transition hover:bg-red-700">
+              <button type="submit" className="rounded-xl bg-yellow-400 px-6 py-4 font-bold text-slate-900 shadow-lg transition hover:bg-yellow-300">
                 Confirmer la réservation
               </button>
             </div>
@@ -219,40 +219,20 @@ export default function Home() {
             <div className="mt-6 space-y-3 text-slate-700">
               <p><span className="font-semibold">Téléphone :</span> <a className="text-blue-700 underline" href="tel:+33400000000">+33 4 00 00 00 00</a></p>
               <p><span className="font-semibold">Adresse :</span> Rue d’Adoume, Marseille</p>
-              <p><span className="font-semibold">Zone :</span> Marseille centre et quartiers proches</p>
-              <p><span className="font-semibold">Horaires :</span> 7j/7, urgences selon disponibilité</p>
+              <p><span className="font-semibold">Horaires :</span> Lundi au samedi, selon disponibilité</p>
             </div>
           </div>
-
-          <form className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-            <div className="grid gap-4">
-              <input className="rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none ring-blue-600 focus:ring-2" placeholder="Votre nom" />
-              <input className="rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none ring-blue-600 focus:ring-2" placeholder="Votre téléphone" />
-              <textarea className="min-h-32 rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none ring-blue-600 focus:ring-2" placeholder="Décrivez votre besoin" />
-              <button type="submit" className="rounded-xl bg-red-600 px-6 py-4 font-bold text-white shadow-lg transition hover:bg-red-700">
-                Envoyer ma demande
-              </button>
-            </div>
-          </form>
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+            <h3 className="text-xl font-bold text-slate-900">Pourquoi cette palette fonctionne</h3>
+            <ul className="mt-4 space-y-3 text-slate-600">
+              <li>• Bleu marine pour la confiance et la structure</li>
+              <li>• Jaune pour les actions et les boutons importants</li>
+              <li>• Vert pour la rassurance et les éléments de validation</li>
+              <li>• Fond clair pour garder une lecture propre et moderne</li>
+            </ul>
+          </div>
         </div>
       </section>
-
-      <footer className="border-t border-slate-200 bg-slate-900 px-4 py-10 text-slate-300">
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="font-semibold text-white">Antoine Electric Marseille</p>
-            <p className="text-sm">Électricien local · Rue d’Adoume · Marseille</p>
-          </div>
-          <p className="text-sm">Interventions, dépannage, mise aux normes et installation électrique.</p>
-        </div>
-      </footer>
-
-      <a
-        href="tel:+33400000000"
-        className="fixed bottom-5 right-5 z-50 rounded-full bg-red-600 px-5 py-4 font-bold text-white shadow-2xl transition hover:bg-red-700"
-      >
-        Appeler
-      </a>
     </main>
   );
 }
